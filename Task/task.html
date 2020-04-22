@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+<body>
+  <h1>Welcome to your personal Task List!</h1>
+   <br/>
+​
+  <span id="text">You can add any task you like by writing it in the specified field and then press "Add new
+      task"</span><br /><br />
+​  <div id="addBox">
+    <input type="text" id="newTask">
+    <input type="button" value="Add new Task" onclick="addNewTask()">
+  </div>
+  <p id="message"></p>
+ 
+  <div id="lis">
+    <p>Tasks to be Done</p>
+    <ul id="myTaskList">
+
+    </ul>
+  </div>
+  <div id="removeBox">
+    <input type="button" id="rmvFirst" value="Remove First Task" >
+    <input type="button" value="Remove Last Task" onclick="removeLast()">
+  </div>
+​     <br>
+​    <div id="changeBox">
+      <input type="color" placeholder="Color" id="colorPicker">
+      <input type="button" value="Change task background" onclick="changeTaskBackgroundColor()">
+    </div>
+​   <br>
+  <input id="sort" type="button" value="Sort" onclick="bubbleSort()" />
+  <script src="task.js"></script>
+</body>
+</html>
