@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+  background: white;
+}
+h1{
+  text-align: center;
+  font-size: 60px;
+  font-style: italic;
+}
+#text {
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 230px;
+}
+#addBox{
+  text-align: center;
+}
+input[type = button]{
+  font-size: 20px;
+  color: rgb(36, 44, 78);
+  border: rgb(36, 44, 78) solid 2px;
+  border-radius: 10px;
+}
+input[type = text]{
+  font-size: 20px;
+  color: rgb(36, 44, 78);
+  border: rgb(36, 44, 78) solid 2px;
+  border-radius: 10px;
+}
+#changeBox{
+  text-align: center;
+}
+#removeBox{
+  text-align: center;
+}
+input[type = color]{
+  border-radius: 40px;
+}
+#sort{
+  margin-left: 680px;
+}
+#myTaskList{
+  background-color: white;
+}
+ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 550px;
+  text-align: center;
+  max-width: 200px;
+  background-color: teal;
+  font-size: 25px;
+  border: rgb(36, 44, 78) solid 2px;
+  border-radius: 10px;
+  font-style: bold;
+}
+#lis p{
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+#message{
+  font-style: bold;
+  font-size: 20px;
+  text-align: center;
+}
