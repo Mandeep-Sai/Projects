@@ -1,0 +1,80 @@
+body{
+    background-color: #292929;
+    color: white;
+    font-family: "Nunito";
+    max-width: 752px;
+    margin: 0 auto;
+}
+h1{
+  text-align: center;
+  color: rgb(233, 86, 27);
+}
+#board{
+  max-width: 900px;
+  padding: 10px;
+}
+.numbers{
+  display: inline-block;
+  text-align: center;
+  width: 90px;
+  height: 60px;
+  padding-top: 33px;
+  border: rgb(233, 86, 27) solid 1px;
+}
+#randNumber{
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+#buttonRand{
+  margin-left: 15px;
+  margin-top: 24px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: rgb(233, 86, 27) 2px solid;
+}
+#heading{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(27, 192, 233);
+}
+#request{
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+h5{
+  font-size: 15px;
+}
+#boardsValue{
+  margin-left: 10px;
+  margin-top: 22px;
+  height: 20px;
+  width: 40px;
+}
+#createBoardButton{
+  margin-left: 380px;
+  font-style: italic;
+  color: rgb(27, 192, 233);
+  background-color: #292929;
+  border-radius: 10px;
+}
+.board{
+  display: inline-block;
+  text-align: center;
+  width: 90px;
+  height: 60px;
+  padding-top: 33px;
+  border: rgb(27, 192, 233) solid 1px;
+}
+#userBoards{
+  display: block
+}
+#refreshButton{
+  margin-left: 350px;
+  font-style: italic;
+  color: rgb(27, 192, 233);
+  background-color: #292929;
+  border-radius: 10px;
+}
