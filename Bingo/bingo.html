@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BINGO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bingo.css">
+</head>
+<body>
+  <h1>BINGO</h1>
+  <div id="board"></div>
+  <div id="bingo">
+    <div id="randNumber">
+      <h4>Click on circle to generate a Number</h4>
+      <input type="button" value="0" id="buttonRand" onclick="generateNumber()">
+    </div>
+  </div>
+  <div id="createBoard">
+    <h4 id="heading">Create your number board and start having fun</h4>
+    <div id="request">
+      <h5>Number of boards :</h5>
+      <input type="number" id="boardsValue">
+    </div>
+    <input type="button" value="Create" id="createBoardButton">
+  </div>
+  <div id="userBoards">
+
+  </div>
+  <input type="button" value="Start New Game" id="refreshButton" onclick="location.reload()">
+  <script src="bingo.js"></script>
+</body>
+</html>
