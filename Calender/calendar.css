@@ -1,0 +1,64 @@
+body{
+  background-color: #292929;
+  color: white;
+  font-family: "Nunito";
+  max-width: 752px;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ef3d59;
+}
+#calendar{
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.day{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  min-height: 80px;
+}
+#addMeeting{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#addMeeting div{
+  text-align: center;
+}
+input{
+  background-color: #ef3d59;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-weight: bold;
+}
+::placeholder{
+  color: white;
+}
+.selected{
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #ef3d59;
+}
+.selected h3{
+  font-weight: bolder;
+  color: #292929;
+}
+#appointments{
+  display: none;
+}
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+li{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
