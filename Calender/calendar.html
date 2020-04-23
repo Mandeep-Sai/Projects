@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calender</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+  <h1>Calendar</h1>
+  <div id="calendar"></div>
+  <h1>Add Meeting</h1>
+  <div id="addMeeting">
+    <div>
+      <h4>Meeting Day</h4>
+      <h4 id="newMeetingDay">Click on a Day</h4>
+    </div>
+    <div>
+      <h4>Meeting Time</h4>
+      <input type="time" id="newMeetingTime">
+    </div>
+    <div>
+      <h4>Meeting Name</h4>
+      <input type="text" id="newMeetingName" placeholder="Name of the meeting">
+    </div>
+    <div>
+      <h4>Add</h4>
+      <input type="button" value="Save Meeting" onclick="addMeeting()">
+    </div>
+  </div>
+  <div id="appointments">
+    <h1>Appointments for the Day</h1>
+    <ul id="appointmentList"></ul>
+  </div>
+  <script src="calendar.js"></script>
+</body>
+</html>
