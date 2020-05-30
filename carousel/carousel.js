@@ -16,7 +16,7 @@ window.onload = async() =>{
   });
   new Glide('.glide',{
     type:'carousel',
-    perView:3
+    perView:5
   }).mount()
 }
 
