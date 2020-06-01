@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="StriveCommunity.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Strive Community</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="https://strive.school/hosted/images/27/d1eed21e764c4aa9b9fa335c0723ed/Strive-logo_blackbg_nopayoff.png" alt="Strive Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Community<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="display-4 text-center">Strive Community</h1>
+        <p>The community consisting of people all over the world is increasing every 6 months. It has people with passion in Web developing. Below is our community so far represented in maps by their living/working location. Have any questions? Don't hesitate to contact the people around you.</p>
+      </div>
+      <div class="container-fluid d-flex">
+        <div id="map" class=""></div>
+        <div>
+          <form>
+            <div class="form-group row">
+              <label for="name" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="location" class="col-sm-2 col-form-label">Location</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="location">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="username" class="col-sm-2 col-form-label">LinkedIn</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="username">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                <button type="submit" id="joinBtn" class="btn btn-primary">Join</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <img src="./school.png" id="school" class="d-none" alt="">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="StriveCommunity.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOkjTz6RSQBRGtI63oiP4i4UtSp8WoXgQ&callback=initMap"
+    async defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
