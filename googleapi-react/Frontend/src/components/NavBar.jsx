@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="/">Navbar</Navbar.Brand>
+    <Navbar className="nav">
+      <Navbar.Brand href="/">
+        <img src="https://strive.school/assets/strive_white.png" alt="" />
+      </Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link className="active" href="/ ">
           Community

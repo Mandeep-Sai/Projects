@@ -102,27 +102,29 @@ export class JoinForm extends Component {
               />
             </Form.Group>
           </Form.Row>
-          <Form.Group>
-            <Form.Label>Linked In URL</Form.Label>
-            <Form.Control
-              type="text"
-              id="linkedInUrl"
-              value={this.state.info.linkedInUrl}
-              onChange={this.updateForm}
-              placeholder="Enter your Linked In profile URL"
-            />
-          </Form.Group>
+          <Form.Row>
+            <Form.Group as={Col}>
+              <Form.Label>Linked In URL</Form.Label>
+              <Form.Control
+                type="text"
+                id="linkedInUrl"
+                value={this.state.info.linkedInUrl}
+                onChange={this.updateForm}
+                placeholder="Enter your Linked In profile URL"
+              />
+            </Form.Group>
 
-          <Form.Group>
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              type="email"
-              id="email"
-              value={this.state.info.email}
-              onChange={this.updateForm}
-              placeholder="Your email"
-            />
-          </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Email</Form.Label>
+              <Form.Control
+                type="email"
+                id="email"
+                value={this.state.info.email}
+                onChange={this.updateForm}
+                placeholder="Your email"
+              />
+            </Form.Group>
+          </Form.Row>
 
           <Form.Row>
             <Form.Group as={Col}>
@@ -155,6 +157,7 @@ export class JoinForm extends Component {
                 id="city"
                 value={this.state.info.city}
                 onChange={this.updateForm}
+                placeholder="City"
               />
             </Form.Group>
 
@@ -164,6 +167,7 @@ export class JoinForm extends Component {
                 id="state"
                 value={this.state.info.state}
                 onChange={this.updateForm}
+                placeholder="State"
               />
             </Form.Group>
 
@@ -173,6 +177,7 @@ export class JoinForm extends Component {
                 id="zip"
                 value={this.state.info.zip}
                 onChange={this.updateForm}
+                placeholder="zip"
               />
             </Form.Group>
           </Form.Row>

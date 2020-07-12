@@ -3,7 +3,7 @@ import { GoogleApiWrapper, InfoWindow, Marker, Map } from "google-maps-react";
 
 const style = {
   width: "100%",
-  height: "90vh",
+  height: "100%",
   overflow: "auto",
 };
 

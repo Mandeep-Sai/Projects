@@ -9,3 +9,28 @@
 .submit {
   margin-left: 50%;
 }
+.nav {
+  background-color: #00ff84;
+}
+.nav img {
+  width: 100px;
+}
+.nav a {
+  color: black !important;
+}
+.nav a:hover {
+  text-decoration: none;
+}
+body {
+  width: 100% !important;
+  height: 90% !important;
+}
+.nav a:hover {
+  color: white !important;
+}
+.form button {
+  border-radius: 0 !important;
+  background-color: #00ff84;
+  border-color: black;
+  color: black !important;
+}
