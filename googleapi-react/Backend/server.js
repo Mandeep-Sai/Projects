@@ -4,6 +4,7 @@ const cors = require("cors");
 const studentsRoutes = require("./students");
 
 const server = express();
+const port = process.env.PORT;
 
 server.use(cors());
 server.use(express.json());
@@ -15,7 +16,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(
-    server.listen(3007, () => {
-      console.log("working on port 3007");
+    server.listen(port, () => {
+      console.log(`working on port${port}`);
     })
   );
