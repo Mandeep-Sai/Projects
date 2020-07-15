@@ -10,8 +10,11 @@ server.use(cors());
 server.use(express.json());
 
 server.use("/students", studentsRoutes);
+
+const uri =
+  "mongodb+srv://user:user@test.hw7hj.mongodb.net/community?retryWrites=true&w=majority";
 mongoose
-  .connect("mongodb://localhost:27017/strive_community", {
+  .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -20,3 +23,6 @@ mongoose
       console.log(`working on port${port}`);
     })
   );
+mongoose.connection.on("connected", () => {
+  console.log("connected to atlas");
+});
