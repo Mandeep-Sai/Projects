@@ -7,6 +7,9 @@ import * as faceapi from "face-api.js";
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      expression: null,
+    };
     this.videoTag = React.createRef();
   }
 
@@ -40,7 +43,16 @@ class App extends React.Component {
           .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
           .withFaceLandmarks()
           .withFaceExpressions();
-        console.log(detections);
+        //console.log(detections);
+        if (detections.length > 0) {
+          let kys = Object.keys(detections[0].expressions);
+          let vals = Object.values(detections[0].expressions);
+          let highVal = vals.indexOf(Math.min(...vals));
+          this.setState({ expression: kys[highVal] });
+          console.log(kys[highVal]);
+        } else {
+          this.setState({ expression: "Face not detected" });
+        }
         //   const resizedDetections = faceapi.resizeResults(
         //     detections,
         //     displaySize
@@ -58,6 +70,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        {this.state.expression ? <p>{this.state.expression}</p> : null}
         <video
           id="video"
           ref={this.videoTag}
