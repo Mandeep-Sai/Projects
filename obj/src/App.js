@@ -33,6 +33,13 @@ class App extends React.Component {
     const video = document.getElementById("video");
     const app = document.querySelector(".App");
 
+    mobilenet.load().then((model) => {
+      // Classify the image.
+      model.classify(video).then((predictions) => {
+        console.log("Predictions: ");
+        console.log(predictions);
+      });
+    });
     video.addEventListener("play", () => {
       const canvas = faceapi.createCanvasFromMedia(video);
       // app.append(canvas);
@@ -47,7 +54,7 @@ class App extends React.Component {
         if (detections.length > 0) {
           let kys = Object.keys(detections[0].expressions);
           let vals = Object.values(detections[0].expressions);
-          let highVal = vals.indexOf(Math.min(...vals));
+          let highVal = vals.indexOf(Math.max(...vals));
           this.setState({ expression: kys[highVal] });
           console.log(kys[highVal]);
         } else {
@@ -61,11 +68,6 @@ class App extends React.Component {
         //   faceapi.draw.drawDetections(canvas, resizedDetections);
       }, 1000);
     });
-    // let model;
-    // tf.setBackend("cpu");
-    // model = await mobilenet.load();
-    //const predictions = await model.classify(video);
-    //console.log(predictions);
   };
   render() {
     return (
